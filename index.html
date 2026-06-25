@@ -167,13 +167,21 @@ footer a{color:var(--emas-muda);text-decoration:none}
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html">Beranda</a></li>
-    <li><a href="#">Artikel</a></li>
-    <li><a href="sabar.html">Majalah</a></li>
-   <li><a href="tentang.html">Tentang Kami</a></li>
-    <li><a href="kontak.html">Kontak</a></li>
-    <li><a href="buletin.html">Buletin</a></li>
-    <li><a href="kajian.html">Kajian Video</a></li>
+    <nav>
+    <ul>
+        <!-- Membuka Beranda di tab yang sama karena ini halaman utama -->
+        <li><a href="index.html">Beranda</a></li>
+        
+        <!-- Membuka halaman Artikel di tab baru -->
+        <li><a href="sabar.html" target="_blank">Artikel</a></li>
+        
+        <!-- Membuka halaman Buletin di tab baru -->
+        <li><a href="buletin.html" target="_blank">Buletin</a></li>
+        
+        <!-- Membuka halaman Kajian Video di tab baru -->
+        <li><a href="kajian.html" target="_blank">Kajian Video</a></li>
+    </ul>
+</nav>
   </ul>
   <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
 </nav>
