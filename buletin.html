@@ -3,35 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buletin Islami - Cahaya Islam</title>
+    <title>Buletin Almadra Style - Cahaya Islam</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
-        header { text-align: center; margin-bottom: 30px; border-bottom: 3px solid #2c3e50; padding-bottom: 20px; }
-        h1 { color: #2c3e50; }
-        .content { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .download-box { background: #f0fdf4; border: 1px solid #bbf7d0; padding: 20px; border-radius: 6px; margin-top: 20px; text-align: center; }
-        .btn-download { display: inline-block; background: #22c55e; color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 10px; }
-        .btn-kembali { display: inline-block; margin-bottom: 20px; text-decoration: none; color: #3498db; font-weight: bold; }
-        footer { text-align: center; margin-top: 40px; font-size: 0.8em; color: #95a5a6; }
+        /* Desain Umum */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f8fafc; color: #334155; }
+        
+        /* Tombol Kembali */
+        .nav-top { max-width: 1200px; margin: 20px auto 0 auto; padding: 0 20px; }
+        .btn-kembali { display: inline-block; text-decoration: none; color: #0f766e; font-weight: bold; font-size: 0.95em; }
+        .btn-kembali:hover { color: #115e59; }
+
+        /* Header Utama */
+        header { text-align: center; padding: 40px 20px; background: #ffffff; margin-bottom: 40px; border-bottom: 1px solid #e2e8f0; }
+        header h1 { color: #0f766e; font-size: 2.2em; margin-bottom: 10px; }
+        header p { color: #64748b; font-size: 1.1em; }
+
+        /* Container Bungkus Utama */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px 60px 20px; }
+
+        /* Sistem Kotak-Kotak (Grid Galeri Buletin) */
+        .buletin-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 30px; }
+
+        /* Kartu per Buletin */
+        .buletin-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); transition: transform 0.2s, box-shadow 0.2s; text-align: center; }
+        .buletin-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+
+        /* Tempat Gambar Cover Buletin */
+        .buletin-cover { width: 100%; height: 350px; background-color: #0f766e; color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; font-weight: bold; position: relative; border-bottom: 1px solid #e2e8f0; }
+        
+        /* Efek hiasan cover jika gambar belum diisi */
+        .buletin-cover span { font-size: 1.5em; display: block; margin-bottom: 5px; }
+        .buletin-cover-sub { font-size: 0.85em; opacity: 0.8; font-weight: normal; }
+
+        /* Info Text di bawah Cover */
+        .buletin-info { padding: 20px; }
+        .buletin-title { font-size: 1.1em; color: #1e293b; font-weight: 700; margin-bottom: 8px; line-height: 1.4; }
+        .buletin-date { font-size: 0.85em; color: #94a3b8; margin-bottom: 15px; }
+
+        /* Tombol Baca / Download */
+        .btn-baca { display: block; background-color: #0f766e; color: #ffffff; padding: 10px; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.9em; transition: background 0.2s; }
+        .btn-baca:hover { background-color: #115e59; }
+
+        /* Footer */
+        footer { text-align: center; padding: 30px; color: #94a3b8; font-size: 0.85em; background: #ffffff; border-top: 1px solid #e2e8f0; }
     </style>
 </head>
 <body>
 
-    <a href="index.html" class="btn-kembali">← Kembali ke Beranda</a>
+    <div class="nav-top">
+        <a href="index.html" class="btn-kembali">← Kembali ke Beranda</a>
+    </div>
 
     <header>
         <h1>Buletin Cahaya Islam</h1>
-        <p style="color: #7f8c8d;">Unduh dan baca buletin dakwah mingguan format digital di sini.</p>
+        <p>Arsip digital berkala, ringkas, dan penuh ilmu syar'i.</p>
     </header>
 
-    <div class="content">
-        <h3>Buletin Edisi Terbaru</h3>
-        <p>Dapatkan materi ringkas, khutbah jumat, dan fikih harian praktis yang diterbitkan setiap pekan oleh tim redaksi Cahaya Islam.</p>
-        
-        <div class="download-box">
-            <h4>Edisi 01: Memurnikan Tauhid di Era Modern</h4>
-            <p style="color: #666; font-size: 0.9em;">Format: PDF | Ukuran: 1.2 MB</p>
-            <a href="#" class="btn-download">Download Buletin (PDF)</a>
+    <div class="container">
+        <!-- Memulai Susunan Baris Kotak Galeri -->
+        <div class="buletin-grid">
+
+            <!-- KOTAK BULETIN 1 -->
+            <div class="buletin-card">
+                <!-- Bagian Cover (Nanti teks ini bisa diganti dengan tag gambar <img src="link-gambar.jpg"> jika ada) -->
+                <div class="buletin-cover" style="background: linear-gradient(135deg, #0f766e, #134e4a);">
+                    <span>BULETIN 03</span>
+                    <div class="buletin-cover-sub">Cahaya Islam</div>
+                </div>
+                <div class="buletin-info">
+                    <div class="buletin-title">Keutamaan Istighfar di Waktu Sahur</div>
+                    <div class="buletin-date">Edisi Juni 2026</div>
+                    <a href="#" target="_blank" class="btn-baca">Baca / Download</a>
+                </div>
+            </div>
+
+            <!-- KOTAK BULETIN 2 -->
+            <div class="buletin-card">
+                <div class="buletin-cover" style="background: linear-gradient(135deg, #0369a1, #0c4a6e);">
+                    <span>BULETIN 02</span>
+                    <div class="buletin-cover-sub">Cahaya Islam</div>
+                </div>
+                <div class="buletin-info">
+                    <div class="buletin-title">Memurnikan Tauhid di Era Modern</div>
+                    <div class="buletin-date">Edisi Mei 2026</div>
+                    <a href="sabar.html" target="_blank" class="btn-baca">Baca / Download</a>
+                </div>
+            </div>
+
+            <!-- KOTAK BULETIN 3 -->
+            <div class="buletin-card">
+                <div class="buletin-cover" style="background: linear-gradient(135deg, #b45309, #78350f);">
+                    <span>BULETIN 01</span>
+                    <div class="buletin-cover-sub">Cahaya Islam</div>
+                </div>
+                <div class="buletin-info">
+                    <div class="buletin-title">Sabar Menghadapi Ujian Zaman</div>
+                    <div class="buletin-date">Edisi April 2026</div>
+                    <a href="sabar.html" target="_blank" class="btn-baca">Baca / Download</a>
+                </div>
+            </div>
+
         </div>
     </div>
 
