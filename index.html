@@ -1,466 +1,116 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
- <meta name="google-site-verification" content="BUE1LFpgSpMFek77u_4to9QMboYAlK6uqppCAYMPWoo" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mengenal Hakikat Taqwa — Cahaya Islam</title>
-<meta name="description" content="Mengenal hakikat taqwa dalam kehidupan modern. Simak pilar-pilar taqwa, tantangan era digital, dan ciri orang bertaqwa menurut para ulama di Cahaya Islam.">
-<meta name="keywords" content="hakikat taqwa, taqwa modern, cahaya islam, buletin islami, pilar taqwa">
-<meta name="author" content="Ust. Abdullah Zayd, Lc. M.A.">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --hijau-tua:#1a4a2e;--hijau:#2d6a4f;--hijau-muda:#52b788;
-  --emas:#c9a84c;--emas-muda:#e8c96a;--krem:#fdf8f0;
-  --putih:#ffffff;--abu:#6b7280;--teks:#1f2937;--border:#e5d9c0;
-}
-body{font-family:'Lato',sans-serif;background:#f5f0e8;color:var(--teks);font-size:16px;line-height:1.7}
-nav{background:var(--hijau-tua);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid var(--emas);position:sticky;top:0;z-index:100}
-.nav-logo{display:flex;align-items:center;gap:12px;padding:14px 0;text-decoration:none}
-.nav-logo-icon{width:38px;height:38px;background:var(--emas);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Amiri',serif;font-size:16px;color:var(--hijau-tua);font-weight:700}
-.nav-logo-text h1{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:white;letter-spacing:1px}
-.nav-logo-text span{font-size:10px;letter-spacing:2px;color:var(--emas-muda);text-transform:uppercase;display:block}
-.nav-links{display:flex;list-style:none}
-.nav-links a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:13px;padding:18px 13px;display:block;border-bottom:3px solid transparent;transition:all 0.2s}
-.nav-links a:hover{color:var(--emas-muda);border-bottom-color:var(--emas)}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
-.hamburger span{width:22px;height:2px;background:white;display:block}
-.mobile-menu{display:none;background:var(--hijau-tua)}
-.mobile-menu a{display:block;color:rgba(255,255,255,0.8);text-decoration:none;padding:11px 1.5rem;font-size:13px;border-bottom:1px solid rgba(255,255,255,0.07)}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majalah Digital - Cahaya Islam</title>
+    <style>
+        /* Desain Dasar */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        
+        /* Bagian Header (Atas) */
+        header { background-color: #2c3e50; color: #fff; padding: 40px 20px; text-align: center; }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        header p { font-size: 1.1em; color: #bdc3c7; }
+        
+        /* Bagian Menu Navigasi */
+        nav { background-color: #1a252f; text-align: center; padding: 15px 0; }
+        nav ul { list-style: none; }
+        nav ul li { display: inline-block; margin: 0 15px; }
+        nav ul li a { color: #fff; text-decoration: none; font-weight: bold; font-size: 1.1em; padding: 5px 10px; transition: color 0.3s; }
+        nav ul li a:hover { color: #3498db; }
+        
+        /* Struktur Layout Utama */
+        .container { display: flex; flex-wrap: wrap; max-width: 1100px; margin: 30px auto; padding: 0 20px; gap: 20px; }
+        
+        /* Kolom Artikel (Kiri) */
+        main { flex: 3; min-width: 300px; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .article-card { border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 25px; }
+        .article-card:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .article-card h2 { color: #2c3e50; margin-bottom: 10px; }
+        .article-card p { color: #666; margin-bottom: 15px; }
+        .read-more { display: inline-block; background-color: #3498db; color: #fff; padding: 8px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9em; }
+        .read-more:hover { background-color: #2980b9; }
 
-/* BREADCRUMB */
-.breadcrumb{padding:1rem 2rem;background:var(--putih);border-bottom:1px solid var(--border);font-size:12px;color:var(--abu)}
-.breadcrumb a{color:var(--hijau);text-decoration:none}
-.breadcrumb a:hover{color:var(--emas)}
-.breadcrumb span{margin:0 6px;color:var(--border)}
+        /* Kolom Sidebar (Kanan) */
+        aside { flex: 1; min-width: 250px; }
+        .widget { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .widget h3 { color: #16a085; border-bottom: 2px solid #16a085; padding-bottom: 10px; margin-bottom: 15px; }
+        .widget ul { list-style: none; }
+        .widget ul li { margin-bottom: 10px; border-bottom: 1px dashed #eee; padding-bottom: 5px; }
+        .widget ul li a { color: #333; text-decoration: none; }
+        .widget ul li a:hover { color: #3498db; }
 
-/* LAYOUT */
-.page-layout{max-width:1100px;margin:2rem auto;padding:0 2rem;display:grid;grid-template-columns:1fr 320px;gap:2rem;align-items:start}
-
-/* ARTIKEL MAIN */
-.artikel-main{}
-.art-header{background:var(--putih);border-radius:8px;border:1px solid var(--border);overflow:hidden;margin-bottom:1.5rem}
-.art-hero{background:linear-gradient(160deg,#1a4a2e,#0d2b1c);padding:3rem 2.5rem;position:relative;overflow:hidden}
-.art-hero::before{content:'';position:absolute;inset:0;opacity:0.04;background-image:repeating-linear-gradient(45deg,var(--emas) 0,var(--emas) 1px,transparent 0,transparent 50%);background-size:18px 18px}
-.art-cat{display:inline-block;background:var(--emas);color:var(--hijau-tua);font-size:10px;font-weight:700;padding:3px 12px;border-radius:3px;letter-spacing:1.5px;margin-bottom:1rem}
-.art-arabic{font-family:'Amiri',serif;font-size:26px;color:var(--emas);direction:rtl;line-height:1.7;margin-bottom:1rem;display:block}
-.art-hero h1{font-family:'Playfair Display',serif;font-size:30px;color:white;font-weight:700;line-height:1.3;margin-bottom:1rem}
-.art-hero p.intro{color:rgba(255,255,255,0.7);font-size:15px;line-height:1.7}
-.art-meta-bar{padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);flex-wrap:wrap;gap:12px}
-.art-author{display:flex;align-items:center;gap:10px}
-.author-av{width:38px;height:38px;border-radius:50%;background:var(--hijau-muda);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:white}
-.author-info p{font-size:13px;font-weight:600;color:var(--teks)}
-.author-info span{font-size:11px;color:var(--abu)}
-.art-stats{display:flex;align-items:center;gap:16px;font-size:12px;color:var(--abu)}
-.art-stats span{display:flex;align-items:center;gap:4px}
-.share-btns{display:flex;gap:8px}
-.share-btn{padding:5px 12px;border-radius:20px;border:1px solid var(--border);font-size:11px;cursor:pointer;background:white;font-family:'Lato',sans-serif;transition:all 0.2s;color:var(--teks)}
-.share-btn:hover{background:var(--hijau-tua);color:var(--emas-muda);border-color:var(--hijau-tua)}
-
-/* KONTEN ARTIKEL */
-.art-body{background:var(--putih);border-radius:8px;border:1px solid var(--border);padding:2.5rem;margin-bottom:1.5rem}
-.art-body h2{font-family:'Playfair Display',serif;font-size:22px;color:var(--hijau-tua);margin:1.5rem 0 0.75rem;position:relative;padding-left:16px}
-.art-body h2::before{content:'';position:absolute;left:0;top:4px;bottom:4px;width:3px;background:var(--emas);border-radius:2px}
-.art-body h3{font-family:'Playfair Display',serif;font-size:18px;color:var(--hijau);margin:1.25rem 0 0.5rem}
-.art-body p{margin-bottom:1rem;color:#374151;line-height:1.8}
-.art-body .arabic-quote{font-family:'Amiri',serif;font-size:22px;color:var(--hijau-tua);direction:rtl;text-align:right;background:var(--krem);border-right:4px solid var(--emas);padding:1rem 1.5rem;margin:1.5rem 0;border-radius:0 6px 6px 0;line-height:1.8}
-.art-body .terjemah{font-style:italic;color:var(--abu);font-size:14px;background:var(--krem);padding:0.75rem 1.25rem;border-radius:4px;margin:-1rem 0 1.5rem;border-left:3px solid var(--emas-muda)}
-.art-body .highlight-box{background:linear-gradient(135deg,var(--hijau-tua),var(--hijau));color:white;padding:1.5rem;border-radius:8px;margin:1.5rem 0}
-.art-body .highlight-box p{color:rgba(255,255,255,0.85);margin-bottom:0}
-.art-body .highlight-box strong{color:var(--emas-muda)}
-.art-body ul{margin:0.5rem 0 1rem 1.5rem}
-.art-body ul li{margin-bottom:6px;color:#374151;line-height:1.7}
-.art-body ul li::marker{color:var(--emas)}
-.art-body .poin-box{background:var(--krem);border:1px solid var(--border);border-radius:6px;padding:1.25rem 1.5rem;margin:1.25rem 0}
-.art-body .poin-box h4{font-size:14px;font-weight:700;color:var(--hijau-tua);margin-bottom:0.75rem;display:flex;align-items:center;gap:8px}
-
-/* TAG ARTIKEL */
-.art-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border)}
-.art-tag{padding:4px 14px;border-radius:20px;border:1px solid var(--border);font-size:12px;color:var(--abu);cursor:pointer;transition:all 0.2s}
-.art-tag:hover{background:var(--hijau-tua);color:var(--emas-muda);border-color:var(--hijau-tua)}
-
-/* ARTIKEL TERKAIT */
-.terkait{background:var(--putih);border-radius:8px;border:1px solid var(--border);padding:1.5rem;margin-bottom:1.5rem}
-.terkait h3{font-family:'Playfair Display',serif;font-size:18px;color:var(--hijau-tua);margin-bottom:1rem;padding-bottom:0.75rem;border-bottom:2px solid var(--emas)}
-.terkait-list{display:flex;flex-direction:column;gap:1rem}
-.terkait-item{display:flex;gap:12px;cursor:pointer;text-decoration:none;color:inherit;transition:all 0.2s}
-.terkait-item:hover .terkait-title{color:var(--hijau)}
-.terkait-img{width:80px;height:60px;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:'Amiri',serif;font-size:13px;color:rgba(255,255,255,0.7)}
-.ti1{background:linear-gradient(135deg,#1a4a2e,#2d6a4f)}
-.ti2{background:linear-gradient(135deg,#4a3728,#7a5c42)}
-.ti3{background:linear-gradient(135deg,#1a3a5c,#2d5a8e)}
-.terkait-info .terkait-cat{font-size:10px;color:var(--emas);font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:3px}
-.terkait-title{font-size:13px;font-weight:600;color:var(--teks);line-height:1.4}
-.terkait-date{font-size:11px;color:var(--abu);margin-top:3px}
-
-/* SIDEBAR */
-.sidebar{}
-.sidebar-box{background:var(--putih);border-radius:8px;border:1px solid var(--border);padding:1.25rem;margin-bottom:1.25rem}
-.sidebar-box h3{font-family:'Playfair Display',serif;font-size:16px;color:var(--hijau-tua);margin-bottom:1rem;padding-bottom:0.6rem;border-bottom:2px solid var(--emas)}
-.sidebar-hadits{background:var(--hijau-tua);border:1px solid rgba(201,168,76,0.3)}
-.sidebar-hadits h3{color:var(--emas-muda);border-bottom-color:rgba(201,168,76,0.3)}
-.sidebar-hadits .h-arabic{font-family:'Amiri',serif;font-size:18px;color:var(--emas);direction:rtl;line-height:1.7;margin-bottom:0.75rem;text-align:right}
-.sidebar-hadits .h-terjemah{font-size:12px;color:rgba(255,255,255,0.7);font-style:italic;line-height:1.6;margin-bottom:0.5rem}
-.sidebar-hadits .h-src{font-size:11px;color:var(--emas-muda);font-weight:600}
-.popular-item{display:flex;gap:10px;padding:0.6rem 0;border-bottom:1px solid var(--border);cursor:pointer;text-decoration:none;color:inherit}
-.popular-item:last-child{border-bottom:none}
-.popular-num{width:24px;height:24px;background:var(--krem);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--hijau-tua);flex-shrink:0;border:1px solid var(--border)}
-.popular-item:hover .popular-title{color:var(--hijau)}
-.popular-title{font-size:12px;font-weight:600;color:var(--teks);line-height:1.4}
-.popular-views{font-size:10px;color:var(--abu);margin-top:2px}
-.majalah-mini{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.mj-mini{background:var(--krem);border:1px solid var(--border);border-radius:6px;padding:0.75rem;cursor:pointer;transition:all 0.2s;text-align:center}
-.mj-mini:hover{border-color:var(--emas);background:white}
-.mj-mini .mj-ed{font-family:'Amiri',serif;font-size:18px;color:var(--emas);font-weight:700}
-.mj-mini .mj-bln{font-size:10px;color:var(--abu);margin-top:2px}
-.mj-mini .mj-dl{font-size:10px;color:var(--hijau);font-weight:600;margin-top:4px}
-.nl-sidebar input{width:100%;border:1px solid var(--border);padding:9px 12px;border-radius:4px;font-size:13px;outline:none;margin-bottom:8px;font-family:'Lato',sans-serif}
-.nl-sidebar button{width:100%;background:var(--hijau-tua);color:var(--emas-muda);border:none;padding:9px;border-radius:4px;font-size:12px;font-weight:700;cursor:pointer;font-family:'Lato',sans-serif;letter-spacing:0.5px}
-.nl-sidebar button:hover{background:var(--hijau)}
-
-/* KOMENTAR */
-.komentar{background:var(--putih);border-radius:8px;border:1px solid var(--border);padding:1.5rem;margin-bottom:1.5rem}
-.komentar h3{font-family:'Playfair Display',serif;font-size:18px;color:var(--hijau-tua);margin-bottom:1rem;padding-bottom:0.75rem;border-bottom:2px solid var(--emas)}
-.km-item{padding:1rem 0;border-bottom:1px solid var(--border)}
-.km-item:last-of-type{border-bottom:none}
-.km-header{display:flex;align-items:center;gap:10px;margin-bottom:6px}
-.km-av{width:34px;height:34px;border-radius:50%;background:var(--hijau-muda);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:white}
-.km-name{font-size:13px;font-weight:600;color:var(--teks)}
-.km-date{font-size:11px;color:var(--abu)}
-.km-text{font-size:13px;color:#4b5563;line-height:1.6;margin-left:44px}
-.km-form{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--border)}
-.km-form h4{font-size:14px;font-weight:700;color:var(--teks);margin-bottom:0.75rem}
-.km-form input,.km-form textarea{width:100%;border:1px solid var(--border);padding:9px 12px;border-radius:4px;font-size:13px;outline:none;font-family:'Lato',sans-serif;margin-bottom:8px;transition:border 0.2s}
-.km-form input:focus,.km-form textarea:focus{border-color:var(--hijau-muda)}
-.km-form textarea{height:90px;resize:vertical}
-.km-form button{background:var(--hijau-tua);color:var(--emas-muda);border:none;padding:9px 20px;border-radius:4px;font-size:13px;font-weight:700;cursor:pointer;font-family:'Lato',sans-serif}
-
-/* FOOTER */
-footer{background:var(--hijau-tua);color:rgba(255,255,255,0.6);padding:1.5rem 2rem;border-top:3px solid var(--emas);text-align:center;margin-top:1rem}
-footer p{font-size:12px}
-footer a{color:var(--emas-muda);text-decoration:none}
-
-@media(max-width:860px){
-  .page-layout{grid-template-columns:1fr;padding:0 1rem}
-  .nav-links{display:none}
-  .hamburger{display:flex}
-  .art-hero h1{font-size:24px}
-  .art-meta-bar{flex-direction:column;align-items:flex-start}
-}
-@media(max-width:500px){
-  .breadcrumb{padding:0.75rem 1rem}
-  .art-body{padding:1.5rem}
-  nav{padding:0 1rem}
-}
-</style>
+        /* Bagian Footer (Bawah) */
+        footer { background-color: #2c3e50; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
 </head>
 <body>
 
-<nav>
-  <a href="index.html" class="nav-logo">
-    <div class="nav-logo-icon">☪</div>
-    <div class="nav-logo-text">
-      <div>Cahaya Islam</div>
-      <span>Majalah & Buletin Islami</span>
-    </div>
-  </a>
-  <ul class="nav-links">
+    <!-- Header Website -->
+    <header>
+        <h1>Cahaya Islam</h1>
+        <p>Menebar Ilmu Syar'i, Membimbing Hati Menuju Ridha Ilahi</p>
+    </header>
+
+    <!-- Menu Navigasi -->
     <nav>
-    <ul>
-       <li><a href="index.html">Beranda</a></li>
-        <li><a href="index.html">artikel</a></li>
-        <li><a href="sabar.html">Majalah</a></li>
-    <li><a href="tentang.html">Tentang Kami</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
-        <li><a href="kajian.html">Kajian Video</a></li>
-    </ul>
-</nav>
-  </ul>
-  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Beranda</a>
-  <a href="#">Artikel</a>
-  <a href="#">Majalah PDF</a>
-  <a href="#">Buletin</a>
-  <a href="#">Kajian Video</a>
-</div>
-
-<div class="breadcrumb">
-  <a href="index.html">Beranda</a><span>›</span>
-  <a href="#">Aqidah & Akhlak</a><span>›</span>
-  Mengenal Hakikat Taqwa dalam Kehidupan Modern
-</div>
-
-<div class="page-layout">
-  <!-- KONTEN UTAMA -->
-  <div>
-    <!-- HEADER ARTIKEL -->
-    <div class="art-header">
-      <div class="art-hero">
-        <span class="art-cat">AQIDAH & AKHLAK</span>
-        <span class="art-arabic">يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ</span>
-        <h1>Mengenal Hakikat Taqwa dalam Kehidupan Modern</h1>
-        <p class="intro">Di era yang penuh distraksi ini, taqwa sejati bukan sekadar ritual — ia adalah kompas jiwa yang membimbing setiap langkah kita menuju ridha Allah.</p>
-      </div>
-      <div class="art-meta-bar">
-        <div class="art-author">
-          <div class="author-av">AZ</div>
-          <div class="author-info">
-            <p>Ust. Abdullah Zayd, Lc. M.A.</p>
-            <span>Alumnus Universitas Al-Azhar Mesir</span>
-          </div>
-        </div>
-        <div class="art-stats">
-          <span>📅 16 Juni 2025</span>
-          <span>⏱ 8 menit baca</span>
-          <span>👁 3.241 dibaca</span>
-        </div>
-        <div class="share-btns">
-          <button class="share-btn" onclick="bagikan('WhatsApp')">📲 WA</button>
-          <button class="share-btn" onclick="bagikan('Telegram')">✈️ TG</button>
-          <button class="share-btn" onclick="bagikan('Facebook')">👍 FB</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- ISI ARTIKEL -->
-    <div class="art-body">
-      <p>Taqwa adalah kata yang sering kita dengar, namun sering disalahpahami. Banyak yang mengira taqwa hanya tentang menjauhi dosa-dosa besar atau rajin beribadah di masjid. Padahal, taqwa memiliki dimensi yang jauh lebih luas dan mendalam dari sekadar itu.</p>
-
-      <h2>Makna Taqwa yang Sesungguhnya</h2>
-      <p>Secara bahasa, taqwa berasal dari kata <em>waqa-yaqi-wiqayah</em> yang berarti melindungi, menjaga, atau membentengi diri. Dalam istilah syariat, para ulama mendefinisikan taqwa dengan berbagai ungkapan yang indah. Imam Ali bin Abi Thalib radhiyallahu 'anhu mendefinisikannya sebagai:</p>
-
-      <div class="arabic-quote">الْخَوْفُ مِنَ الْجَلِيلِ وَالْعَمَلُ بِالتَّنْزِيلِ وَالْقَنَاعَةُ بِالْقَلِيلِ وَالِاسْتِعْدَادُ لِيَوْمِ الرَّحِيلِ</div>
-      <div class="terjemah">"Rasa takut kepada Yang Maha Agung, mengamalkan apa yang diturunkan (Al-Qur'an), merasa cukup dengan yang sedikit, dan mempersiapkan diri untuk hari kepergian (kematian)."</div>
-
-      <p>Definisi ini sangat komprehensif. Ia mencakup dimensi hati (rasa takut kepada Allah), dimensi amal (mengamalkan Al-Qur'an), dimensi sikap hidup (qana'ah), dan dimensi eskatologi (mempersiapkan akhirat).</p>
-
-      <h2>Taqwa di Era Modern: Tantangan dan Peluang</h2>
-      <p>Kita hidup di era yang belum pernah dialami generasi sebelumnya. Smartphone di genggaman membuka pintu menuju konten-konten yang bisa mendekatkan atau menjauhkan kita dari Allah. Media sosial menciptakan tekanan untuk mengikuti gaya hidup tertentu. Persaingan ekonomi mendorong sebagian orang menghalalkan segala cara.</p>
-
-      <div class="highlight-box">
-        <p><strong>Taqwa modern bukan berarti meninggalkan teknologi.</strong> Ia berarti menggunakan teknologi dengan penuh kesadaran bahwa Allah Maha Melihat setiap ketikan, setiap konten yang kita konsumsi, dan setiap transaksi yang kita lakukan secara digital.</p>
-      </div>
-
-      <h3>Empat Pilar Taqwa dalam Kehidupan Sehari-hari</h3>
-
-      <div class="poin-box">
-        <h4>📌 Empat Pilar Utama</h4>
         <ul>
-          <li><strong>Muraqabah (Pengawasan diri)</strong> — Kesadaran bahwa Allah selalu menyaksikan setiap amal kita, baik yang terlihat maupun yang tersembunyi. Ini adalah fondasi taqwa.</li>
-          <li><strong>Muhasabah (Introspeksi)</strong> — Kebiasaan mengevaluasi diri setiap malam: apakah hari ini lebih baik dari kemarin? Apakah ada hak sesama yang kita abaikan?</li>
-          <li><strong>Mujahada (Bersungguh-sungguh)</strong> — Taqwa membutuhkan perjuangan melawan hawa nafsu, bukan pasrah pada kebiasaan buruk dengan alasan "sudah takdir".</li>
-          <li><strong>Mu'aqabah (Koreksi dan hukuman diri)</strong> — Ketika berbuat salah, segera bertaubat dan menegakkan konsekuensi positif untuk memperbaiki diri.</li>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="sabar.html" target="_blank">Artikel</a></li>
+            <li><a href="buletin.html" target="_blank">Buletin</a></li>
+            <li><a href="kajian.html" target="_blank">Kajian Video</a></li>
         </ul>
-      </div>
+    </nav>
 
-      <h2>Tanda-Tanda Orang yang Bertaqwa</h2>
-      <p>Al-Qur'an dalam Surah Ali Imran ayat 133-134 menggambarkan ciri-ciri orang bertaqwa dengan sangat indah. Mereka adalah orang yang berinfak di waktu lapang maupun sempit, yang menahan amarah, yang memaafkan kesalahan orang lain, dan yang apabila berbuat dosa segera ingat kepada Allah lalu beristighfar.</p>
+    <!-- Konten Utama -->
+    <div class="container">
+        
+        <!-- Bagian Kiri: Daftar Artikel -->
+        <main>
+            <div class="article-card">
+                <h2>Sabar: Kunci Segala Kemudahan dalam Islam</h2>
+                <p>Dalam mengarungi kehidupan di dunia, seorang muslim tidak akan pernah lepas dari berbagai ujian. Ketahui bagaimana Islam memandang kesabaran sebagai senjata spiritual yang sangat ampuh.</p>
+                <a href="sabar.html" target="_blank" class="read-more">Baca Selengkapnya</a>
+            </div>
 
-      <p>Perhatikan betapa konkret dan terukurnya ciri-ciri ini. Taqwa bukan hanya soal perasaan spiritual yang abstrak, tetapi tercermin dalam perilaku nyata: bagaimana kita mengelola harta, mengelola emosi, dan mengelola hubungan dengan sesama.</p>
+            <div class="article-card">
+                <h2>Download Buletin Dakwah Pekan Ini</h2>
+                <p>Dapatkan materi ringkas, khutbah jumat, dan fikih harian praktis yang diterbitkan setiap pekan. Tersedia dalam format PDF yang mudah dibaca di smartphone Anda.</p>
+                <a href="buletin.html" target="_blank" class="read-more">Lihat Buletin</a>
+            </div>
+            
+            <div class="article-card">
+                <h2>Tonton Kajian Video Pilihan</h2>
+                <p>Simak rekaman kajian ilmiah dan ceramah singkat dari para asatidzah untuk mengisi waktu luang Anda dengan ilmu yang bermanfaat.</p>
+                <a href="kajian.html" target="_blank" class="read-more">Tonton Sekarang</a>
+            </div>
+        </main>
 
-      <h2>Membangun Taqwa Secara Bertahap</h2>
-      <p>Taqwa bukan kondisi yang bisa diraih dalam semalam. Ia dibangun secara bertahap melalui keistiqamahan dalam amalan-amalan kecil yang konsisten. Rasulullah ﷺ bersabda bahwa amalan yang paling dicintai Allah adalah yang paling konsisten meskipun sedikit.</p>
+        <!-- Bagian Kanan: Sidebar Samping -->
+        <aside>
+            <div class="widget">
+                <h3>Tentang Kami</h3>
+                <p style="font-size: 0.9em; color: #555;">Majalah Digital Cahaya Islam berkomitmen menyajikan literasi dan artikel keislaman yang menyejukkan serta berdasarkan dalil yang tepercaya.</p>
+            </div>
+            
+            <div class="widget">
+                <h3>Artikel Populer</h3>
+                <ul>
+                    <li><a href="sabar.html" target="_blank">Tiga Tingkatan Sabar</a></li>
+                    <li><a href="#">Makna Sejati Tawakal</a></li>
+                    <li><a href="#">Rukun Iman: Fondasi Kokoh</a></li>
+                </ul>
+            </div>
+        </aside>
 
-      <p>Mulailah dari hal-hal kecil: menjaga shalat tepat waktu, menjaga lisan dari ghibah, berhati-hati dalam penghasilan, dan memperbanyak dzikir. Setiap langkah kecil ini adalah batu bata yang membangun istana taqwa dalam hati kita.</p>
-
-      <div class="highlight-box">
-        <p>Taqwa adalah perjalanan seumur hidup, bukan destinasi yang bisa dicapai sekali lalu selesai. Setiap hari adalah kesempatan baru untuk menjadi lebih dekat kepada Allah. Dan itulah keindahan Islam — ia selalu membuka pintu perbaikan selama nafas masih ada.</p>
-      </div>
-
-      <p>Semoga Allah anugerahkan kepada kita taqwa yang hakiki — yang menghiasi hati, memperbaiki lisan, dan memperindah amal perbuatan kita. Aamiin ya Rabbal 'Aalamin.</p>
-
-      <div class="art-tags">
-        <span class="art-tag">#Taqwa</span>
-        <span class="art-tag">#Aqidah</span>
-        <span class="art-tag">#Akhlak</span>
-        <span class="art-tag">#IslomModern</span>
-        <span class="art-tag">#Spiritualitas</span>
-        <span class="art-tag">#Kajian</span>
-      </div>
     </div>
 
-    <!-- ARTIKEL TERKAIT -->
-    <div class="terkait">
-      <h3>Artikel Terkait</h3>
-      <div class="terkait-list">
-        <a href="artikel.html" class="terkait-item">
-          <div class="terkait-img ti1">الصَّبْر</div>
-          <div class="terkait-info">
-            <div class="terkait-cat">AKHLAK</div>
-            <div class="terkait-title">Sabar: Miftahul Faraj, Kunci Segala Kemudahan dalam Islam</div>
-            <div class="terkait-date">14 Juni 2025</div>
-          </div>
-        </a>
-        <a href="artikel.html" class="terkait-item">
-          <div class="terkait-img ti2">التَّوَكُّل</div>
-          <div class="terkait-info">
-            <div class="terkait-cat">TAFSIR</div>
-            <div class="terkait-title">Tawakal Bukan Pasrah: Memahami Makna Sejati dari Al-Qur'an</div>
-            <div class="terkait-date">10 Juni 2025</div>
-          </div>
-        </a>
-        <a href="artikel.html" class="terkait-item">
-          <div class="terkait-img ti3">الإِيمَان</div>
-          <div class="terkait-info">
-            <div class="terkait-cat">AQIDAH</div>
-            <div class="terkait-title">Rukun Iman: Fondasi Kokoh Kehidupan Seorang Muslim</div>
-            <div class="terkait-date">6 Juni 2025</div>
-          </div>
-        </a>
-      </div>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Majalah Digital Cahaya Islam. Hak Cipta Dilindungi.</p>
+    </footer>
 
-    <!-- KOMENTAR -->
-    <div class="komentar">
-      <h3>💬 Komentar (3)</h3>
-      <div class="km-item">
-        <div class="km-header">
-          <div class="km-av">SR</div>
-          <div><div class="km-name">Siti Rahmah</div><div class="km-date">16 Juni 2025 · 09:14</div></div>
-        </div>
-        <div class="km-text">Jazakallahu khayran Ustadz. Artikel ini sangat menyentuh hati dan mengingatkan saya untuk lebih introspeksi diri. Semoga bermanfaat untuk kita semua.</div>
-      </div>
-      <div class="km-item">
-        <div class="km-header">
-          <div class="km-av" style="background:#c9a84c;color:#1a4a2e">AM</div>
-          <div><div class="km-name">Ahmad Mustofa</div><div class="km-date">16 Juni 2025 · 11:30</div></div>
-        </div>
-        <div class="km-text">Definisi taqwa dari Imam Ali sangat dalam maknanya. Perlu dibaca berulang-ulang dan direnungkan. Barakallahu fiik Ustadz Abdullah.</div>
-      </div>
-      <div class="km-item">
-        <div class="km-header">
-          <div class="km-av" style="background:#1a3a5c">NF</div>
-          <div><div class="km-name">Nur Fatimah</div><div class="km-date">17 Juni 2025 · 07:45</div></div>
-        </div>
-        <div class="km-text">Empat pilar taqwa yang dipaparkan sangat praktis dan mudah dipahami. Mohon Ustadz buat artikel lanjutan tentang cara konkret membangun muraqabah dalam keseharian.</div>
-      </div>
-      <div class="km-form">
-        <h4>Tulis Komentar</h4>
-        <input type="text" id="kmNama" placeholder="Nama kamu">
-        <textarea id="kmTeks" placeholder="Tulis komentar yang bermanfaat..."></textarea>
-        <button onclick="kirimKomentar()">Kirim Komentar</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <div class="sidebar-box sidebar-hadits">
-      <h3>Hadits Hari Ini</h3>
-      <div class="h-arabic">اتَّقِ اللَّهَ حَيْثُمَا كُنْتَ</div>
-      <div class="h-terjemah">"Bertakwalah kepada Allah di mana pun kamu berada..."</div>
-      <div class="h-src">HR. Tirmidzi · Hadits Hasan</div>
-    </div>
-
-    <div class="sidebar-box">
-      <h3>Artikel Populer</h3>
-      <div>
-        <a href="artikel.html" class="popular-item">
-          <div class="popular-num">1</div>
-          <div>
-            <div class="popular-title">Doa-Doa Sunnah yang Sering Terlupakan</div>
-            <div class="popular-views">👁 8.430 dibaca</div>
-          </div>
-        </a>
-        <a href="artikel.html" class="popular-item">
-          <div class="popular-num">2</div>
-          <div>
-            <div class="popular-title">Panduan Lengkap Shalat Sunnah Rawatib</div>
-            <div class="popular-views">👁 6.215 dibaca</div>
-          </div>
-        </a>
-        <a href="artikel.html" class="popular-item">
-          <div class="popular-num">3</div>
-          <div>
-            <div class="popular-title">Birrul Walidain: Kunci Keberkahan Hidup</div>
-            <div class="popular-views">👁 5.780 dibaca</div>
-          </div>
-        </a>
-        <a href="artikel.html" class="popular-item">
-          <div class="popular-num">4</div>
-          <div>
-            <div class="popular-title">Fiqih Zakat Digital: Panduan Lengkap</div>
-            <div class="popular-views">👁 4.990 dibaca</div>
-          </div>
-        </a>
-        <a href="artikel.html" class="popular-item">
-          <div class="popular-num">5</div>
-          <div>
-            <div class="popular-title">Mengenal Asmaul Husna dan Maknanya</div>
-            <div class="popular-views">👁 4.322 dibaca</div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="sidebar-box">
-      <h3>Majalah Terbaru</h3>
-      <div class="majalah-mini">
-        <div class="mj-mini" onclick="alert('Download Edisi 24 akan segera dimulai!')">
-          <div class="mj-ed">Edisi 24</div>
-          <div class="mj-bln">Juni 2025</div>
-          <div class="mj-dl">⬇ Download</div>
-        </div>
-        <div class="mj-mini" onclick="alert('Download Edisi 23 akan segera dimulai!')">
-          <div class="mj-ed">Edisi 23</div>
-          <div class="mj-bln">Mei 2025</div>
-          <div class="mj-dl">⬇ Download</div>
-        </div>
-        <div class="mj-mini" onclick="alert('Download Edisi 22 akan segera dimulai!')">
-          <div class="mj-ed">Edisi 22</div>
-          <div class="mj-bln">Apr 2025</div>
-          <div class="mj-dl">⬇ Download</div>
-        </div>
-        <div class="mj-mini" onclick="alert('Download Edisi 21 akan segera dimulai!')">
-          <div class="mj-ed">Edisi 21</div>
-          <div class="mj-bln">Mar 2025</div>
-          <div class="mj-dl">⬇ Download</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="sidebar-box nl-sidebar">
-      <h3>Newsletter Gratis</h3>
-      <p style="font-size:12px;color:var(--abu);margin-bottom:0.75rem">Dapatkan artikel terbaik setiap minggu langsung ke email kamu.</p>
-      <input type="email" id="sideEmail" placeholder="Email kamu...">
-      <button onclick="subscribesidebar()">BERLANGGANAN GRATIS</button>
-    </div>
-  </aside>
-</div>
-
-<footer>
-  <p>© 2025 <strong style="color:var(--emas)">Cahaya Islam</strong> · <a href="index.html">Beranda</a> · <a href="#">Tentang</a> · <a href="#">Kontak</a> · Semua hak dilindungi</p>
-</footer>
-
-<script>
-function toggleMenu(){
-  var m=document.getElementById('mobileMenu');
-  m.style.display=m.style.display==='block'?'none':'block';
-}
-function bagikan(platform){
-  alert('Artikel ini akan dibagikan ke '+platform+'.\nLink: https://cahayaislam.id/artikel/hakikat-taqwa');
-}
-function kirimKomentar(){
-  var nama=document.getElementById('kmNama').value.trim();
-  var teks=document.getElementById('kmTeks').value.trim();
-  if(!nama||!teks){alert('Mohon isi nama dan komentar kamu.');return;}
-  alert('Jazakallahu khayran, '+nama+'! Komentar kamu sedang dalam proses moderasi.');
-  document.getElementById('kmNama').value='';
-  document.getElementById('kmTeks').value='';
-}
-function subscribesidebar(){
-  var email=document.getElementById('sideEmail').value.trim();
-  if(email&&email.includes('@')){
-    alert('Berhasil! '+email+' telah terdaftar sebagai pelanggan Cahaya Islam.');
-    document.getElementById('sideEmail').value='';
-  } else {
-    alert('Mohon masukkan email yang valid.');
-  }
-}
-</script>
 </body>
 </html>
